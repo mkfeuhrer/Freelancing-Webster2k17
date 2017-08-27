@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Register Page</title>
+</head>
+
+<body>
+	<p> <%= message %> </p>
+	<br>
+	<form id = 'register-form' method = 'POST' action = '/register'>
+		<label for = 'name'>Name :</label>
+		<input type = 'text' name = 'name'>
+		<br>
+		<label for = 'email'>Email :</label>
+		<input type = 'email' name = 'email'>
+		<br>
+		<label for = 'password'>Password :</label>
+		<input type = 'password' name = 'password'>
+		<br>
+		<label for = 'contact'>Contact :</label>
+		<input type = 'number' name = 'contact' min = '1000000000' max = '9999999999' >
+		<br>
+		<label for = 'birthday'>DOB :</label>
+		<input type = 'date' name = 'birthday'>
+		<br>
+		<input type = 'radio' name = 'user_type' value = 'client' checked>Client
+		<input type = 'radio' name = 'user_type' value = 'freelancer' checked>Freelancer<br>
+
+
+		<input type = 'submit' value = 'submit' />
+	</form>
+</body>
+</html>
