@@ -1,0 +1,16 @@
+{
+  "name": "freelancer",
+  "version": "1.0.0",
+  "description": "Webster project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "me",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "mysql": "^2.14.1"
+  }
+}
