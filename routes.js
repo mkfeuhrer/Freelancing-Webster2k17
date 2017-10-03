@@ -185,4 +185,19 @@ module.exports = function(app, passport){
 		req.logout();
 		res.redirect('/');
 	});
+	
+	
+	//Display details of the client
+	app.get( "/profile/client/:username" , function( req , res ) {
+	  mongoose.model('clients').find( { username : req.params.username } , function( err , client ) {
+	    res.render( 'clientProfile' , { client : client } ) ;
+	  }) ;
+	}) ;
+
+	//Display details of the freelancer
+	app.get( "/profile/freelancer/:username" , function( req , res ){
+	  mongoose.model('freelancers').find( { username : req.params.username } , function( err , freelancer ) {
+	    res.render( 'freelancerProfile' , { freelancer : freelancer } ) ;
+	  }) ;
+	} ) ;
 };
